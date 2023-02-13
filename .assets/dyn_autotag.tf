@@ -14,7 +14,7 @@ resource "dynatrace_autotag" "EnvironmentTag" {
       }
     enabled      = true
     type         = "HOST"
-    value_format = "DEV"
+    value_format = "${var.environment}"
     normalization     = "LEAVE_TEXT_AS_IS"
   }
   name = "Environment"
