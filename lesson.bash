@@ -16,7 +16,7 @@ function lesson_2 (){
 
 function lesson_3 (){
 	# Management Zones Lab
-	cp .assets/dyn_management_zones.tf .
+	cp .assets/dyn_autotag.tf .
 }
 
 function lesson_4 (){
