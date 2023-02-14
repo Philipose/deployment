@@ -1,13 +1,13 @@
 resource "dynatrace_alerting_profile" "FirstAlert" {
-  display_name = "${var.app_name} - ${var.environment} - Default Alerting"
+  display_name = "${var.app_name} - Environment - Default Alerting"
   mz_id = ""
   rules {
     tag_filter {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
@@ -23,8 +23,8 @@ resource "dynatrace_alerting_profile" "FirstAlert" {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
@@ -40,8 +40,8 @@ resource "dynatrace_alerting_profile" "FirstAlert" {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
@@ -57,8 +57,8 @@ resource "dynatrace_alerting_profile" "FirstAlert" {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
@@ -74,8 +74,8 @@ resource "dynatrace_alerting_profile" "FirstAlert" {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
@@ -91,8 +91,8 @@ resource "dynatrace_alerting_profile" "FirstAlert" {
       include_mode = "INCLUDE_ALL"
       tag_filters {
         context = "CONTEXTLESS"
-        key = "${var.environment}"
-        value = "production"
+        key = "Environment"
+        value = "${var.environment}"
       }
       tag_filters {
         context = "CONTEXTLESS"
