@@ -1,5 +1,5 @@
 resource "dynatrace_alerting_profile" "FirstAlert" {
-  display_name = "${var.app_name} - Environment - Default Alerting"
+  display_name = "${var.app_name} - ${var.environment} - Default Alerting"
   mz_id = ""
   rules {
     tag_filter {
